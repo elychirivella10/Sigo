@@ -76,12 +76,9 @@
                         </div>
                         <div class="form-group">
                             <strong>Archivo:</strong>
-
-                            <button  class="btn btn-primary"><a class="button" href="/storage/{{ substr($employee->files,7) }}" alt="">Documento</a></button>
-                            
-                                
-
-                           
+                            <a class="btn btn-primary" href="/storage/{{ substr($employee->files,7) }}" alt="">
+                                Documentos
+                            </a>
                         </div>
 
                     </div>

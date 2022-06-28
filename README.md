@@ -16,3 +16,12 @@
 - **Composer -> "2.2.13"**
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Comandos para instalar la Aplicacion
+
+1) composer install
+2) Npm install
+3) php artisan key:generate
+4) php artisan migrate
+5) php artisan db:seed
+6) php artisan storage:link

@@ -7,7 +7,7 @@
   -->
     <div class="logo">
         <a href="#" class="simple-text logo-normal">
-            {{ __('.:: SIGA - HIDROVEN ::.') }}
+            {{ __('SIGO') }}
         </a>
     </div>
     <div class="sidebar-wrapper">
@@ -24,65 +24,7 @@
                     <span class="sidebar-mini"></span>
                     <span class="sidebar-normal">{{ __('Mi Perfil') }} </span>
                 </a>
-            </li>
-
-            <li class="nav-item {{ $activePage == '' ? ' active' : '' }}">
-                <a class="nav-link" data-toggle="collapse" href="#" aria-expanded="true">
-                    
-                  <i class="fa fa-address-card" aria-hidden="true"></i>
-                  
-                 
-                    {{-- <i><img style="width:25px" src="{{ asset('material') }}/img/laravel.svg"></i> --}}
-                    <p>{{ __('Talento Humano') }}
-                        <b class="caret"></b>
-                    </p>
-                </a>
-                <div class="collapse show" id="lx">
-                    <ul class="nav">
-                  
-                            <li class="nav-item{{ $activePage == 'employees' ? ' active' : 'Expedientes' }}">
-                                <a class="nav-link" href="{{ route('employees.index') }}">
-                                <i class="fa fa-clipboard" aria-hidden="true"></i>
-                                   
-                                <p>{{ __('Expedientes Empleados') }}</p>
-                                </a>
-                            </li>
-                            @can('branch_index')
-                            <li class="nav-item{{ $activePage == 'branches' ? ' active' : 'Empresas' }}">
-                                <a class="nav-link" href="{{ route('branches.index') }}">
-                            <i class="fa fa-building" aria-hidden="true"></i>
-                                <p>{{ __('Empresas') }}</p>
-                                </a>
-                            </li>
-                            @endcan
-                            @can('departament_index')
-                            <li class="nav-item{{ $activePage == 'departaments' ? ' active' : 'Oficinas' }}">
-                                <a class="nav-link" href="{{ route('departaments.index') }}">
-                                   <i class="fa fa-building-o" aria-hidden="true"></i>
-                                    <p>{{ __('Oficinas') }}</p>
-                                </a>
-                            </li>
-                            @endcan
-                            @can('location_index')
-                            <li class="nav-item{{ $activePage == 'locations' ? ' active' : ' Estanterias' }}">
-                                <a class="nav-link" href="{{ route('locations.index') }}">
-                                   <i class="fa fa-building-o" aria-hidden="true"></i>
-                                    <p>{{ __('Estanterias') }}</p>
-                                </a>
-                            </li>
-                            @endcan
-                            
-                            <li class="nav-item{{ $activePage == 'positions' ? ' active' : ' Cargos' }}">
-                                <a class="nav-link" href="{{ route('positions.index') }}">
-                                   <i class="fa fa-building-o" aria-hidden="true"></i>
-                                    <p>{{ __('Cargos') }}</p>
-                                </a>
-                            </li>
-                            
-                           
-                    </ul>
-                </div>
-            </li>
+            </li>         
 
             <li class="nav-item {{ $activePage == 'users' ? ' active' : '' }}">
               <a class="nav-link" data-toggle="collapse" href="#lxx" aria-expanded="true">

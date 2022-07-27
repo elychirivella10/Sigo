@@ -7,8 +7,8 @@ Sigo es un aplicativo que presente ser un sistema integral de gestion operativa 
 ### REQUERIMIENTOS
 
 - **PHP => 8.0^**
-- **NPM => *v6.14.16*
-- **NODEJS => *v12.22.12*
+- **NPM => *v6.14.16**
+- **NODEJS => *v14^**
 
 
 

@@ -197,7 +197,8 @@ return [
 
  // se agrega el paquete de laravel permiso
         Spatie\Permission\PermissionServiceProvider::class,
-
+ // se agrega el debugger
+        Barryvdh\Debugbar\ServiceProvider::class,
     ],
 
     /*

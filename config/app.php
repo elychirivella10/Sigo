@@ -195,6 +195,9 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+ // se agrega el paquete de laravel permiso
+        Spatie\Permission\PermissionServiceProvider::class,
+
     ],
 
     /*

@@ -1,8 +1,8 @@
 <?php
+
 namespace Database\Seeders;
 
-use App\Models\User;
-use Illuminate\Support\Facades\DB;
+// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -14,12 +14,11 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-   
-        $this->call([
-            PermissionSeeder::class,
-            RoleSeeder::class,
-            RoleHasPermissionSeeder::class,
-            UsersTableSeeder::class,
-        ]);
+        // \App\Models\User::factory(10)->create();
+
+        // \App\Models\User::factory()->create([
+        //     'name' => 'Test User',
+        //     'email' => 'test@example.com',
+        // ]);
     }
 }
